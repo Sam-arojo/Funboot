@@ -11,7 +11,7 @@
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     :root{--orange:#FF6B35;--dark:#1A1A2E;--text:#2D2D3A;--muted:#6B7280;--bg:#F7F4F0;--white:#FFFFFF;--border:#E5E7EB}
     body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text)}
-    nav{position:sticky;top:0;z-index:100;background:var(--white);border-bottom:1px solid var(--border);padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:64px}
+    nav{position:sticky;top:0;z-index:100;background:var(--white);border-bottom:1px solid var(--border);padding:0 64px;display:flex;align-items:center;justify-content:space-between;height:64px}
     .nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
     .logo-icon{width:36px;height:36px;border-radius:10px;background:var(--orange);display:flex;align-items:center;justify-content:center;font-size:18px}
     .logo-text{font-size:20px;font-weight:900;color:var(--orange)}
@@ -44,6 +44,7 @@
     .hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
 .hamburger span { display: block; width: 24px; height: 2px; background: var(--dark); border-radius: 2px; transition: all .3s; }
 @media(max-width: 640px) {
+  nav{padding:0 24px;}  
   .hamburger { display: flex; }
   .nav-links { display: none; flex-direction: column; position: absolute; top: 64px; left: 0; right: 0; background: var(--white); border-bottom: 1px solid var(--border); padding: 16px 24px; gap: 16px; }
   .nav-links.open { display: flex; }
